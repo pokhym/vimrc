@@ -39,8 +39,17 @@ Plugin 'ervandew/supertab'
 " Vim-Powerline: Statusline plugin
 Plugin 'powerline/powerline'
 
-" Vim-nerdtree-tabs: NERDTree and tabs together in Vim, painlessly
-Plugin 'jistr/vim-nerdtree-tabs'
+" The NERD Tree
+Plugin 'scrooloose/nerdtree'
+
+" Tagbar
+Plugin 'majutsushi/tagbar'
+
+" Buffergator
+Plugin 'jeetsukumaran/vim-buffergator'
+
+" Exuberant-ctags
+Plugin 'jakedouglas/exuberant-ctags'
 
 " The NERD Commenter: Vim Plugin for intensely orgasmic commenting
 Plugin 'scrooloose/nerdcommenter'
@@ -57,6 +66,12 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
+
+" Keybindings
+map <C-n> :NERDTreeToggle<CR>
+
+
+"
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -235,6 +250,9 @@ map <Leader>s :Sexplore<cr>
 
 " NERD Tab
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " pressing < or > will let you indent/unident selected lines
 
