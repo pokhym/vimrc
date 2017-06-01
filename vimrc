@@ -60,6 +60,9 @@ Plugin 'mkitt/tabline.vim'
 " unimpaired.vim
 Plugin 'tpope/vim-unimpaired'
 
+" golden-ratio
+Plugin 'roman/golden-ratio'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,6 +84,9 @@ map <C-n> :NERDTreeToggle<CR>
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Syntastic use c++11
+let g:syntastic_cpp_compiler_options='-std=c++11'
 
 
 highlight Normal ctermfg=grey ctermbg=black
