@@ -25,18 +25,25 @@ Plugins Installed
 
 Shortcuts
   - Leader Key: ,
-  - Explore: <Leader>e
-  - Sexplore: <Leader>s
-  - Move buffers: <M-Left> and <M-Right>
-  - Move tabs: <C-ww>
+  - Explore: Leader+e
+  - Sexplore: Leader+s
+  - Move buffers: M+Left and M+Right
+  - Move tabs: C+ww
+
   - NERD Tree
-    - Toggle: <C-n>
-  - Buffergator
-    - Toggle: <Leader>b
-      - <ENTER> to edit the selected buffer
-      - <C-V> to edit the selected buffer in a new vertical split
-      - <C-S> to edit the selected buffer in a new horizontal split
-      - <C-T> to edit the selected buffer in a new tab page
-      - Use <Leader><LEFT>, <Leader><UP>, <Leader><RIGHT>, <Leader><DOWN> to split a new window left, up, right, or down, respectively, and edit the previous MRU buffer there.
+    - Toggle: C+n
+
   - Tagbar
-    Toggle: <F8>
+    Toggle: F8
+
+  - Buffergator
+    - Toggle: Leader+b
+      - ENTER to edit the selected buffer
+      - Ctrl+V to edit the selected buffer in a new vertical split
+      - Ctrl+S to edit the selected buffer in a new horizontal split
+      - Ctrl+T to edit the selected buffer in a new tab page
+      - Use Leader+LEFT, Leader+UP, Leader+RIGHT, Leader+DOWN to split a new window left, up, right, or down, respectively, and edit the previous MRU buffer there.
+
+  - NERD Commenter
+    - Comment: Ctrl+cs
+    - Uncomment Ctrl+c+space
