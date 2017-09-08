@@ -30,8 +30,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/syntastic'
 
 " molokai color scheme
-Plugin 'tomasr/molokai'
-" colorscheme molokai
+" Plugin 'tomasr/molokai'
+" Space Gray color scheme
+Plugin 'ajh17/spacegray.vim'
 
 " SuperTab: Autocomplete
 Plugin 'ervandew/supertab'
@@ -74,6 +75,9 @@ filetype plugin indent on    " required
 
 " Keybindings
 map <C-n> :NERDTreeToggle<CR>
+
+" Color Scheme
+colorscheme spacegray
 
 
 "
