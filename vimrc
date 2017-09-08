@@ -63,6 +63,8 @@ Plugin 'tpope/vim-unimpaired'
 " golden-ratio
 Plugin 'roman/golden-ratio'
 
+" system verilog
+Plugin 'vhda/verilog_systemverilog.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -260,6 +262,10 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Fix for Copy and Paste
+" vnoremap <leader>y"+y
+" nnoremap <leader>p"+p
+
 " pressing < or > will let you indent/unident selected lines
 
 vnoremap < <gv
@@ -430,3 +436,4 @@ function! UpdateTimeStamp()
  endif
  endfunction
 endif
+
