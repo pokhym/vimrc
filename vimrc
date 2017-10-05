@@ -67,6 +67,9 @@ Plugin 'roman/golden-ratio'
 " system verilog
 Plugin 'vhda/verilog_systemverilog.vim'
 
+" Python auto complete
+Plugin 'davidhalter/jedi-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -266,9 +269,15 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
 
-" Fix for Copy and Paste
+" Fix for Copy and Paste WORKS LINUX VIM GTK
 " vnoremap <leader>y"+y
 " nnoremap <leader>p"+p
+" 
+" Not working supposed to for mac
+" set clipboard=unnamed
+vmap <C-x> :!pbcopy<CR>  
+vmap <C-c> :w !pbcopy<CR><CR>
+vmap <C-v> :!pbpaste<CR><CR>
 
 " pressing < or > will let you indent/unident selected lines
 
@@ -441,3 +450,6 @@ function! UpdateTimeStamp()
  endfunction
 endif
 
+
+vnoremap <leader>y "+y
+nnoremap <leader>p "+p
